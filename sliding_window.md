@@ -16,32 +16,6 @@ By **sliding** a window across our data and **updating** relevant counts/aggrega
 4. **Track** your desired result (e.g., the maximum window size, minimum window size, or any other measure).
 
 ---
-
-## Sliding Window Template
-
-Below is a generic Python template that demonstrates the core idea. You can adapt it for your specific problem logic:
-
-```python
-def sliding_window_template(arr, k):  # 'k' might be a target, or used in a condition
-    left = 0
-    window_sum = 0  # could be a frequency map, product, etc.
-    result = float('-inf')  # or float('inf') if minimizing
-
-    for right in range(len(arr)):
-        # 1. Expand window by including arr[right]
-        window_sum += arr[right]
-
-        # 2. Adjust window if condition is violated
-        while condition_not_met(window_sum, k):
-            window_sum -= arr[left]
-            left += 1
-
-        # 3. Update result if needed
-        result = max(result, window_sum)
-        # Or for length-based problems:
-        # result = max(result, right - left + 1)
-
-    return result
 1. [**3. Longest Substring Without Repeating Characters**](https://leetcode.com/problems/longest-substring-without-repeating-characters/)  
    - **Key Idea**: Track last occurrence of each character to ensure no duplicates in the current window.
 
@@ -82,3 +56,29 @@ def sliding_window_template(arr, k):  # 'k' might be a target, or used in a cond
     - **Key Idea**: Fixed-size window; count vowels and slide across the string.
 
 ---
+
+## Sliding Window Template
+
+Below is a generic Python template that demonstrates the core idea. You can adapt it for your specific problem logic:
+
+```python
+def sliding_window_template(arr, k):  # 'k' might be a target, or used in a condition
+    left = 0
+    window_sum = 0  # could be a frequency map, product, etc.
+    result = float('-inf')  # or float('inf') if minimizing
+
+    for right in range(len(arr)):
+        # 1. Expand window by including arr[right]
+        window_sum += arr[right]
+
+        # 2. Adjust window if condition is violated
+        while condition_not_met(window_sum, k):
+            window_sum -= arr[left]
+            left += 1
+
+        # 3. Update result if needed
+        result = max(result, window_sum)
+        # Or for length-based problems:
+        # result = max(result, right - left + 1)
+
+    return result
