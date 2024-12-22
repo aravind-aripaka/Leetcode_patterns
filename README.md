@@ -1,1 +1,1 @@
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fflinttotal.gumroad.com%2Fl%2Fnotiontemplate&psig=AOvVaw0z6fBHSy4_XovWTBb9NiJV&ust=1734985388827000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjyhLSavIoDFQAAAAAdAAAAABAE![image](https://github.com/user-attachments/assets/55d3a9e9-824b-47c1-8eb0-604c16454b3e)
+![image](https://github.com/user-attachments/assets/26640fbd-c2dd-432f-a9f2-448ee124487b)
