@@ -1,3 +1,5 @@
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fpirateking_pirateking-activity-7129879350170054656-dbVR&psig=AOvVaw1_msodO5o5yqpNbxDphhTJ&ust=1734985137812000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKidrbiZvIoDFQAAAAAdAAAAABAI![image](https://github.com/user-attachments/assets/94bb2812-136c-4589-86f1-7ce8bad0df9e)
+
 # Sliding Window Pattern
 
 The **Sliding Window** pattern is a popular technique for solving problems on arrays and strings where we need to find a **contiguous subarray/substring** that meets certain criteria (e.g., maximum/minimum sum, target conditions, number of distinct elements). 
