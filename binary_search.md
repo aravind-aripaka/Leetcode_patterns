@@ -1,4 +1,4 @@
-# Popular Binary Search Problems
+# Binary Search Problems
 
 **Binary Search** is a classic algorithmic technique to **efficiently find a target element** in a sorted structure (array, search space, etc.) by repeatedly dividing the search interval in half. At each step, we compare the target value with the value in the middle of the current interval:
 
