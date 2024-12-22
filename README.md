@@ -1,4 +1,4 @@
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fpirateking_pirateking-activity-7129879350170054656-dbVR&psig=AOvVaw1_msodO5o5yqpNbxDphhTJ&ust=1734985137812000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKidrbiZvIoDFQAAAAAdAAAAABAI![image](https://github.com/user-attachments/assets/94bb2812-136c-4589-86f1-7ce8bad0df9e)
+
 
 # Sliding Window Pattern
 
@@ -42,3 +42,43 @@ def sliding_window_template(arr, k):  # 'k' might be a target, or used in a cond
         # result = max(result, right - left + 1)
 
     return result
+1. [**3. Longest Substring Without Repeating Characters**](https://leetcode.com/problems/longest-substring-without-repeating-characters/)  
+   - **Key Idea**: Track last occurrence of each character to ensure no duplicates in the current window.
+
+2. [**76. Minimum Window Substring**](https://leetcode.com/problems/minimum-window-substring/)  
+   - **Key Idea**: Find a substring in `s` containing all characters of `t`. Use frequency maps and shrink when valid.
+
+3. [**209. Minimum Size Subarray Sum**](https://leetcode.com/problems/minimum-size-subarray-sum/)  
+   - **Key Idea**: Running sum approach. Expand window until sum >= target, then shrink to find minimum length.
+
+4. [**340. Longest Substring with At Most K Distinct Characters**](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) *(Premium)*  
+   - **Key Idea**: Use a hash map to count distinct characters. Shrink when more than `k` distinct characters.
+
+5. [**424. Longest Repeating Character Replacement**](https://leetcode.com/problems/longest-repeating-character-replacement/)  
+   - **Key Idea**: We can replace up to `k` characters to get the longest substring with all same characters.
+
+6. [**438. Find All Anagrams in a String**](https://leetcode.com/problems/find-all-anagrams-in-a-string/)  
+   - **Key Idea**: Fixed window size = length of `p`. Compare frequency of current window with `p`'s frequency.
+
+7. [**567. Permutation in String**](https://leetcode.com/problems/permutation-in-string/)  
+   - **Key Idea**: Similar to #438; check if any substring of length `len(p)` is a permutation of `p`.
+
+8. [**713. Subarray Product Less Than K**](https://leetcode.com/problems/subarray-product-less-than-k/)  
+   - **Key Idea**: Maintain the product of the window. Shrink from left if product >= `k`.
+
+9. [**904. Fruit Into Baskets**](https://leetcode.com/problems/fruit-into-baskets/)  
+   - **Key Idea**: At most two distinct fruits (like #340 but with `k = 2`).
+
+10. [**1004. Max Consecutive Ones III**](https://leetcode.com/problems/max-consecutive-ones-iii/)  
+    - **Key Idea**: You can flip at most `k` zeroes. Track number of zeroes in the window and shrink if exceeded.
+
+11. [**1052. Grumpy Bookstore Owner**](https://leetcode.com/problems/grumpy-bookstore-owner/)  
+    - **Key Idea**: Use sliding window of size `X` to find the best segment to reduce grumpiness and maximize satisfied customers.
+
+12. [**1423. Maximum Points You Can Obtain from Cards**](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/)  
+    - **Key Idea**: Instead of thinking in terms of selecting `k` from ends, think of ignoring a window of size `len(cards)-k` in the middle and minimize its sum.
+
+13. [**1456. Maximum Number of Vowels in a Substring of Given Length**](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)  
+    - **Key Idea**: Fixed-size window; count vowels and slide across the string.
+
+---
